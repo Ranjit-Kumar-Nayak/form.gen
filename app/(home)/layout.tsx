@@ -1,4 +1,4 @@
-import Logo from "@/components/ui/Logo";
+import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { UserButton } from "@clerk/nextjs";
 import React from "react";
