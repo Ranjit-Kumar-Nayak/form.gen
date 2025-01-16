@@ -1,3 +1,4 @@
+import { DarkMode } from "@/components/DarkMode";
 import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { UserButton } from "@clerk/nextjs";
@@ -11,7 +12,8 @@ const layout = ({ children }: { children: React.ReactNode }) => {
           <Logo />
           <div className="flex items-center">
             <Button variant={'link'}>DashBoard</Button>
-            <UserButton/>
+            <UserButton afterSwitchSessionUrl="/sign-in"/>
+            <DarkMode/>
           </div>
         </nav>
       </div>
